@@ -1,0 +1,21 @@
+{
+  "name": "truffle-init-webpack",
+  "description": "Frontend example using truffle v3",
+  "main": "",
+  "authors": [
+    "Douglas von Kohorn"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4"
+  }
+}
