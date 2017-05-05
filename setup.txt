@@ -1,0 +1,41 @@
+setting up a new ethereum contracts project (with web interface) on windows:
+
+from git bash
+1) install nodejs
+2) npm install -g truffle
+3) npm install -g ethereumjs-testrpc
+make and change to project directory
+4) truffle init webpack
+to verify correct install
+5) truffle compile
+in separate git bash window
+6) testrpc
+back to original git bash window
+7) truffle migrate
+8) truffle test
+verify that it works
+----------------------------
+now to add new stuff
+
+using 'command prompt' for interactive install 
+1) bower init
+take all defaults
+set components as dependencies?       Yes
+common ignore files to ignore list?   Yes
+mark package private ?                No
+looks good?                           Yes
+
+back to git bash from project directory
+2) bower install --save angular angular-route
+
+edit truffle.js to add bower components: see file
+			"bower_components/angular/angular.js",
+			"bower_components/angular-route/angular-route.js"
+
+
+-----------------------
+add new solidity file to ./contracts/
+
+truffle compile will compile your new .sol file
+
+now edit migrations/2_deploy_contracts.js
